@@ -20,3 +20,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/user/invite/create', [App\Http\Controllers\InviteUsersController::class, 'store'])->name('store.invite');
